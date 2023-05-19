@@ -18,7 +18,7 @@ def read_root():
 #/{{question}:{context}}")
 def read_item():
     #print(question , context)
-    nlp_qa = pipeline("question-answering")
+    nlp_qa = pipeline("question-answering",model="distilbert-base-cased-distilled-squad")
     return nlp_qa({
     'question': "what is ml",
     'context': "ml is anything"

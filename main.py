@@ -14,13 +14,14 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/answerFromText/{{question}:{context}}")
-def read_item(question , context):
-    print(question , context)
+@app.get("/answerFromText")
+#/{{question}:{context}}")
+def read_item():
+    #print(question , context)
     nlp_qa = pipeline("question-answering")
     return nlp_qa({
-    'question': question,
-    'context': context
+    'question': "what is ml",
+    'context': "ml is anything"
 })
 
 @app.get("/answerFromImage/{{image}:{question}}")

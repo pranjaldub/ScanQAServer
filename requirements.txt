@@ -1,0 +1,10 @@
+fastapi
+pytesseract
+uvicorn[standard]
+numpy
+pandas
+transformers
+jupyter-dash 
+pyngrok
+python-multipart
+

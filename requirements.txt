@@ -1,5 +1,8 @@
 fastapi
 pytesseract
+PyTorch
+Tensorflow
+Flax
 uvicorn[standard]
 numpy
 pandas

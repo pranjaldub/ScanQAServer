@@ -1,6 +1,6 @@
 fastapi
 pytesseract
-PyTorch
+torch
 Tensorflow
 uvicorn[standard]
 numpy

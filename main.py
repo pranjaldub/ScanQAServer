@@ -16,6 +16,7 @@ def read_root():
 
 @app.get("/answerFromText/{{question}:{context}}")
 def read_item(question , context):
+    print(question , context)
     nlp_qa = pipeline("question-answering")
     return nlp_qa({
     'question': question,
